@@ -16,6 +16,7 @@ gulp.task('serve', function() {
 gulp.task('stylus', function(){
     return gulp.src('src/static/stylus/main.styl')
         .pipe(gp.sourcemaps.init())
+        .pipe(gp.plumberNotifier())
         .pipe(gp.stylus({
             pretty:true
         }))
