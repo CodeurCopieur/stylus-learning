@@ -1,6 +1,15 @@
-body
-    background-color green
+//@import 'styl/variables'
+//@import 'styl/mixins'
 
-body 
-    color blue
-    margin 0 auto
+// ou 
+
+@import 'styl/*'
+
+body
+    background-color primary
+    color grey
+    border solid 1px @color
+    transition: @color 5s ease 0s
+    border-radius(5px)
+    cf()
+    lol()

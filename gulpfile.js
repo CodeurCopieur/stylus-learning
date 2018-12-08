@@ -3,7 +3,6 @@
 var gulp = require('gulp'),
     gp = require('gulp-load-plugins')();
 
-
 gulp.task('stylus', function(){
     return gulp.src('src/static/stylus/main.styl')
         .pipe(gp.sourcemaps.init())
